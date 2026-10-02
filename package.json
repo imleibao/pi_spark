@@ -1,0 +1,40 @@
+{
+  "name": "spark",
+  "version": "0.3.0",
+  "description": "A Pi extension for capturing local sparks and chatting with Pi from WeChat.",
+  "type": "module",
+  "private": true,
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "spark",
+    "wechat"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "dependencies": {
+    "@wechatbot/wechatbot": "^2.2.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.99.2",
+    "@types/node": "^24.0.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "typescript": "^5.9.3"
+  }
+}
