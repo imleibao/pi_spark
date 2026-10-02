@@ -24,9 +24,11 @@ pi install npm:pi-spark-extension
 ### 从本地源码安装
 
 ```bash
-cd /Users/lei/code/pi_spark
+cd /path/to/pi_spark
 npm install
-pi install /Users/lei/code/pi_spark
+
+npm install
+pi install /path/to/pi_spark
 ```
 
 本地路径包不会由 Pi 自动安装依赖，所以第一次必须先运行 `npm install`。修改源码后，可在 Pi 中运行 `/reload`。
