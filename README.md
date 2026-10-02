@@ -6,14 +6,10 @@
 
 ## Features
 
-- Save ideas locally as transparent JSONL records.
-- Extract every `#hashtag` from the saved content automatically.
-- List all active ideas or filter them locally.
-- Search in two stages: exact hashtag matching followed by semantic selection with the model currently active in Pi.
-- Review ideas created during the last seven days.
-- Select and archive completed ideas while preserving their original creation timestamps and hashtags.
-- View all archived ideas.
-- Talk to the current Pi session from a phone through `@wechatbot/wechatbot`.
+1. Capture ideas whenever inspiration emerges in everyday life.
+2. Use an LLM to search past ideas for sparks related to your input keywords.
+3. Use hashtags freely to organize your ideas.
+4. Connect Pi to WeChat with `@wechatbot/wechatbot`, so you can add ideas from your phone anytime, anywhere.
 
 ## Requirements
 

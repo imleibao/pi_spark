@@ -1,6 +1,6 @@
 {
   "name": "pi-spark-extension",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A Pi extension for capturing local sparks and chatting with Pi from WeChat.",
   "type": "module",
   "files": [
