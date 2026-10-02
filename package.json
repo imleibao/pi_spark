@@ -1,9 +1,14 @@
 {
-  "name": "spark",
+  "name": "pi-spark-extension",
   "version": "0.3.0",
   "description": "A Pi extension for capturing local sparks and chatting with Pi from WeChat.",
   "type": "module",
-  "private": true,
+  "files": [
+    "src",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
   "keywords": [
     "pi-package",
     "pi-extension",
@@ -11,6 +16,14 @@
     "wechat"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imleibao/pi_spark.git"
+  },
+  "homepage": "https://github.com/imleibao/pi_spark#readme",
+  "bugs": {
+    "url": "https://github.com/imleibao/pi_spark/issues"
+  },
   "engines": {
     "node": ">=22.19.0"
   },

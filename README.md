@@ -1,6 +1,6 @@
-# spark
+# pi-spark-extension
 
-`spark` is a local-first extension for Pi that captures fragmented ideas, retrieves them by hashtag or semantic similarity, archives completed ideas, and optionally bridges the current Pi session to WeChat.
+`pi-spark-extension` is the npm package for `spark`, a local-first Pi extension that captures fragmented ideas, retrieves them by hashtag or semantic similarity, archives completed ideas, and optionally bridges the current Pi session to WeChat.
 
 > A Chinese guide is also available in [`README.zh-CN.md`](./README.zh-CN.md).
 
@@ -23,7 +23,17 @@
 
 ## Installation
 
-Install dependencies from the project directory:
+Install the published package directly with Pi:
+
+```bash
+pi install npm:pi-spark-extension
+```
+
+Restart Pi after installation. The package registers the `spark` extension commands automatically.
+
+### Install from a local checkout
+
+For development, install dependencies from the project directory:
 
 ```bash
 cd /path/to/pi_spark
@@ -36,7 +46,7 @@ Install the local extension in Pi:
 pi install /path/to/pi_spark
 ```
 
-Restart Pi after the first installation. While developing, run `/reload` in Pi after changing the extension source.
+While developing, run `/reload` in Pi after changing the extension source.
 
 ## Quick start
 

@@ -1,12 +1,20 @@
-# spark
+# pi-spark-extension
 
-`spark` 是一个 Pi 扩展：把碎片化灵感以 JSONL 保存在本地，也可以通过微信在手机上继续和当前 Pi 会话对话。
-
-需求、架构、开发和测试文档见 [`dev_doc/`](./dev_doc/README.md)。
+`pi-spark-extension` 是 `spark` 插件的 npm 包：把碎片化灵感以 JSONL 保存在本地，也可以通过微信在手机上继续和当前 Pi 会话对话。
 
 ## 安装
 
 要求：Node.js 22.19+、Pi 0.74+。
+
+推荐直接通过 Pi 安装 npm 包：
+
+```bash
+pi install npm:pi-spark-extension
+```
+
+安装后重启 Pi，插件会自动加载。
+
+### 从本地源码安装
 
 ```bash
 cd /Users/lei/code/pi_spark
@@ -14,7 +22,7 @@ npm install
 pi install /Users/lei/code/pi_spark
 ```
 
-重启 Pi 后，插件会自动加载。本地路径包不会由 Pi 自动安装依赖，所以第一次必须先运行 `npm install`。
+本地路径包不会由 Pi 自动安装依赖，所以第一次必须先运行 `npm install`。修改源码后，可在 Pi 中运行 `/reload`。
 
 ## 命令
 
